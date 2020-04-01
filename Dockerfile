@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 ARG AWSCLI_VERSION=1.18.24
-ARG KOPS_VERSION=1.16.0
+ARG KOPS_VERSION=v1.16.0
 ARG KUBECTL_VERSION=v1.16.8
 
 RUN  apk add --update --no-cache bash python jq ca-certificates groff less \
