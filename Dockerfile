@@ -15,6 +15,5 @@ RUN  curl -sLo /usr/local/bin/kops https://github.com/kubernetes/kops/releases/d
 RUN  apk del --purge build-deps \
   && rm -f /var/cache/apk/*
 
-ENTRYPOINT ["/usr/local/bin/kops"]
-CMD ["--help"]
+CMD ["kops --help"]
 
